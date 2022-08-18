@@ -42,15 +42,15 @@
 
         function girisYap()
             {
-                var dataName = localStorage.getItem('isim').value;
-                var dataSifre = localStorage.getItem('sifre').value;
+                var dataName = localStorage.getItem('isim');
+                var dataSifre = localStorage.getItem('sifre');
 
 
-                if(!(dataName == document.getElementById('name') && !(dataSifre == document.getElementById('sifre'))))
+                if((dataName == document.getElementById('name').value))
                 {
                    alert('Giris Başarılı!');
                 }
-                if((dataName == document.getElementById('name') && dataSifre == document.getElementById('sifre')))
+                else
                 {
                     alert("Giriş Başarısız");
                 }
